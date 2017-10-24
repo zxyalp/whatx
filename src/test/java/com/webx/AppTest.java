@@ -1,38 +1,37 @@
 package com.webx;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 /**
- * Unit test for simple App.
+ * Created by yang.zhou on 2017/10/24.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+
+    @BeforeClass
+    public void setUpClass(){
+
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @BeforeMethod
+    public void setUp(){
+
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+
+    @Test
+    public void testApp(){
+        Assert.assertTrue(true);
     }
+
+    @AfterMethod
+    public void tearDown(){
+
+    }
+
+    @AfterClass
+    public void tearDownClass(){
+
+    }
+
 }
