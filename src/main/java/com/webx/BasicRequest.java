@@ -34,7 +34,7 @@ import java.util.List;
  * @author yang.zhou
  * @date 2017/10/26
  */
-public class BasicReq {
+public class BasicRequest {
 
     public static void main(String[] args) {
 
@@ -163,7 +163,7 @@ public class BasicReq {
 
 
     public static Header[] addHeaders(){
-        List<Header> headers = new ArrayList<Header>();
+        List<Header> headers = new ArrayList<>();
         headers.add(new BasicHeader("accept", "*/*"));
         headers.add(new BasicHeader("content-type", "application/x-www-form-urlencoded"));
         headers.add(new BasicHeader("accept-encoding", "gzip, deflate"));
