@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimuHttpClientUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuWebConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuWebHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuWebHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TextContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/simu.properties" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1603,7 +1593,7 @@
       <workItem from="1509355313687" duration="2089000" />
       <workItem from="1509414287145" duration="21591000" />
       <workItem from="1509500258174" duration="5948000" />
-      <workItem from="1509519765384" duration="10370000" />
+      <workItem from="1509519765384" duration="10388000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1508810397014</created>
@@ -1647,7 +1637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509448868072</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add client">
+      <created>1509535188722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509535188722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1665,7 +1662,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88387000" />
+    <option name="totallyTimeSpent" value="88405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
