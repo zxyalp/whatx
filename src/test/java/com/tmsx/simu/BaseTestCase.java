@@ -11,5 +11,4 @@ public class BaseTestCase {
     private static final Log logger = LogFactory.getLog(BaseTestCase.class);
 
 
-
 }

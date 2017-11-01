@@ -1,5 +1,6 @@
 package com.webx;
 
+import com.tmsx.noclient.utils.PropertyUtil;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -8,30 +9,9 @@ import org.testng.annotations.*;
  */
 public class AppTest {
 
-    @BeforeClass
-    public void setUpClass(){
+
+    public static void main(String[] args) {
+        System.out.println(PropertyUtil.getProperty("simu.user"));
 
     }
-
-    @BeforeMethod
-    public void setUp(){
-
-    }
-
-
-    @Test
-    public void testApp(){
-        Assert.assertTrue(true);
-    }
-
-    @AfterMethod
-    public void tearDown(){
-
-    }
-
-    @AfterClass
-    public void tearDownClass(){
-
-    }
-
 }

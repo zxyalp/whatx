@@ -1,6 +1,7 @@
 package com.tmsx.noclient.base;
 
 import com.alibaba.fastjson.JSONObject;
+import com.tmsx.noclient.helper.SimuWebHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.*;
@@ -99,22 +100,32 @@ public class HttpClientUtils {
     }
 
 
-    public SimpleHttpResponse doPost(String token, String httpUrl, JSONObject jsonObject) {
-        SimpleHttpRequest request = getBasicRequest(token);
+    public SimpleHttpResponse doPost(String httpUrl, JSONObject jsonObject) {
+        SimpleHttpRequest request = getBasicRequest();
         request.setUrl(httpUrl);
         request.setJsonData(jsonObject);
         request.addHeader(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.toString());
         return doPost(request);
     }
 
-    public SimpleHttpRequest getBasicRequest() {
+
+    public SimpleHttpResponse doPost(String httUrl, Map<String, String> paramMap){
+        SimpleHttpRequest request = getBasicRequest();
+        request.setUrl(httUrl);
+        request.setFormData(paramMap);
+        return doPost(request);
+    }
+
+    public SimpleHttpRequest getBasicRequest(){
         return getBasicRequest(null);
     }
 
-
-    public SimpleHttpRequest getBasicRequest(String accessToken) {
+    public SimpleHttpRequest getBasicRequest(String cookie) {
         SimpleHttpRequest request = new SimpleHttpRequest();
-        request.addHeader("Cookie: ", accessToken);
+        request.addHeader("Accept-Encoding", "gzip, deflate");
+        request.addHeader("Accept-Language", "zh-CN,zh;q=0.8");
+        request.addHeader("User-Agent", "Chrome/61.0.3163.100 Safari/537.36");
+        request.addHeader("Cookie", cookie);
         return request;
     }
 
