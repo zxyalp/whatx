@@ -34,7 +34,7 @@ import java.util.Map;
  */
 public class HttpClientUtils {
 
-    private final static Log logger = LogFactory.getLog(HttpClientUtils.class);
+    private static final Log logger = LogFactory.getLog(HttpClientUtils.class);
 
     private static HttpClientUtils httpClientUtils;
 
@@ -281,22 +281,4 @@ public class HttpClientUtils {
 
         return respHeader;
     }
-
-
-    private void logRequest(HttpRequestBase method) {
-        try {
-            logger.info("-------------------Request-------------------");
-            logger.info("请求头：" + method.getRequestLine().toString());
-            Header[] headers = method.getAllHeaders();
-            if (headers != null) {
-                for (Header header : headers) {
-                    logger.info(header.getName() + " = " + header.getValue());
-                }
-            }
-        } catch (Exception e) {
-
-        }
-    }
-
-
 }
