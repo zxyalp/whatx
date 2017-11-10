@@ -1,6 +1,7 @@
 package com.tmsx.noclient.base;
 
 import com.alibaba.fastjson.JSONObject;
+import com.sun.deploy.net.HttpUtils;
 import com.tmsx.noclient.helper.SimuWebHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -36,14 +37,18 @@ public class HttpClientUtils {
 
     private static final Log logger = LogFactory.getLog(HttpClientUtils.class);
 
-    private static HttpClientUtils httpClientUtils;
+    private static HttpClientUtils httpClientUtils = null;
 
     private HttpClientUtils() {
     }
 
     public static HttpClientUtils getInstance() {
         if (httpClientUtils == null) {
-            return new HttpClientUtils();
+            synchronized(HttpClientUtils.class){
+                if (httpClientUtils == null){
+                    httpClientUtils =  new HttpClientUtils();
+                }
+            }
         }
         return httpClientUtils;
     }
@@ -63,7 +68,7 @@ public class HttpClientUtils {
             response = executeInternal(httpMethod);
 
         } catch (URISyntaxException u) {
-            logger.error("UURISyntaxException.", u);
+            logger.error("URISyntaxException.", u);
             throw new RuntimeException("URISyntaxException.", u);
 
         } catch (Exception e) {
@@ -125,13 +130,15 @@ public class HttpClientUtils {
         request.addHeader("Accept-Encoding", "gzip, deflate");
         request.addHeader("Accept-Language", "zh-CN,zh;q=0.8");
         request.addHeader("User-Agent", "Chrome/61.0.3163.100 Safari/537.36");
-        request.addHeader("Cookie", cookie);
+        if (cookie != null) {
+            request.addHeader("Cookie", cookie);
+        }
         return request;
     }
 
 
     /**
-     * 1、build查询参数
+     * 1、build query param
      */
 
     private void buildQueryParams(HttpRequestBase requestBase, SimpleHttpRequest request) throws URISyntaxException {
@@ -171,6 +178,12 @@ public class HttpClientUtils {
 
     }
 
+
+    /**
+     * 3、build body
+     * @param httpMethod
+     * @param request
+     */
 
     private void buildEntityBody(HttpEntityEnclosingRequestBase httpMethod, SimpleHttpRequest request) {
         if (request.getFormData() != null) {
