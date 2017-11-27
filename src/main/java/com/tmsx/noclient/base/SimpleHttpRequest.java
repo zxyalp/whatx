@@ -12,6 +12,7 @@ import java.util.Map;
  * @date 2017/10/27
  */
 public class SimpleHttpRequest {
+
     private String url;
     private Map<String, String> query;
     private Map<String, String> header;
@@ -30,10 +31,6 @@ public class SimpleHttpRequest {
      * multipart
      */
     private Map<String, Object> multipartData;
-
-    public SimpleHttpRequest() {
-
-    }
 
 
     public SimpleHttpRequest addQuery(String key, String value) {

@@ -1,11 +1,12 @@
 package com.tmsx.noclient.base;
 
 import com.alibaba.fastjson.JSONObject;
-import com.sun.deploy.net.HttpUtils;
-import com.tmsx.noclient.helper.SimuWebHelper;
+import com.tmsx.noclient.context.HttpContext;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.*;
+import org.apache.http.client.config.CookieSpecs;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.*;
 import org.apache.http.client.protocol.HttpClientContext;
@@ -19,6 +20,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -31,7 +34,9 @@ import java.util.Map;
 
 /**
  * HTTP 请求通用客户端封装
- * Created by yang.zhou on 2017/10/30.
+ *
+ * @author yang.zhou
+ * @date 2017/10/30
  */
 public class HttpClientUtils {
 
@@ -39,7 +44,11 @@ public class HttpClientUtils {
 
     private static HttpClientUtils httpClientUtils = null;
 
+    @Autowired
+    private HttpClientContext context;
+
     private HttpClientUtils() {
+
     }
 
     public static HttpClientUtils getInstance() {
@@ -57,7 +66,7 @@ public class HttpClientUtils {
      * Http GET接口
      */
     public SimpleHttpResponse doGet(SimpleHttpRequest request) {
-        SimpleHttpResponse response = null;
+        SimpleHttpResponse response;
         try {
             HttpGet httpMethod = new HttpGet();
 
@@ -121,19 +130,9 @@ public class HttpClientUtils {
         return doPost(request);
     }
 
-    public SimpleHttpRequest getBasicRequest(){
-        return getBasicRequest(null);
-    }
 
-    public SimpleHttpRequest getBasicRequest(String cookie) {
-        SimpleHttpRequest request = new SimpleHttpRequest();
-        request.addHeader("Accept-Encoding", "gzip, deflate");
-        request.addHeader("Accept-Language", "zh-CN,zh;q=0.8");
-        request.addHeader("User-Agent", "Chrome/61.0.3163.100 Safari/537.36");
-        if (cookie != null) {
-            request.addHeader("Cookie", cookie);
-        }
-        return request;
+    public SimpleHttpRequest getBasicRequest() {
+        return new SimpleHttpRequest();
     }
 
 
@@ -145,7 +144,7 @@ public class HttpClientUtils {
 
         URIBuilder uriBuilder = new URIBuilder(request.getUrl());
 
-        if (request.getQuery() == null) {
+        if (StringUtils.isEmpty(request.getQuery())) {
             requestBase.setURI(uriBuilder.build());
             return;
         }
@@ -236,30 +235,40 @@ public class HttpClientUtils {
 
     private SimpleHttpResponse executeInternal(HttpRequestBase method) throws Exception {
 
-        return executeInternal(method, null);
+        HttpClientContext context = HttpContext.getInstance();
+
+        RequestConfig requestConfig = RequestConfig.custom()
+                .setCookieSpec(CookieSpecs.STANDARD)
+                .setSocketTimeout(10000)
+                .setConnectTimeout(10000)
+                .setConnectionRequestTimeout(10000)
+                .build();
+
+        return executeInternal(method, context, requestConfig);
     }
 
 
-    private SimpleHttpResponse executeInternal(HttpRequestBase method, HttpClientContext context) throws Exception {
+    private SimpleHttpResponse executeInternal(HttpRequestBase method, HttpClientContext context,
+                                               RequestConfig requestConfig) throws Exception {
+
         SimpleHttpResponse simpleHttpResponse = new SimpleHttpResponse();
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        method.setConfig(requestConfig);
 
         CloseableHttpResponse response = httpClient.execute(method, context);
 
         HttpEntity entity = response.getEntity();
 
-        int statusCode = response.getStatusLine().getStatusCode();
-
-        Map<String, List<String>> headers = getResponseHeaders(response);
+        StatusLine statusLine = response.getStatusLine();
 
         String entityBody = EntityUtils.toString(entity, "utf-8");
 
-
         EntityUtils.consume(entity);
 
-        simpleHttpResponse.setHeaders(headers);
-        simpleHttpResponse.setStatusCode(statusCode);
+        simpleHttpResponse.setAllHeaders(headersToMap(response));
+        simpleHttpResponse.setStatusLine(statusLine);
         simpleHttpResponse.setMessageBody(entityBody);
 
         return simpleHttpResponse;
@@ -267,7 +276,8 @@ public class HttpClientUtils {
     }
 
     private String execute(HttpRequestBase httpMethod) throws Exception {
-        SimpleHttpResponse simpleHttpResponse = executeInternal(httpMethod, null);
+
+        SimpleHttpResponse simpleHttpResponse = executeInternal(httpMethod);
 
         int statusCode = simpleHttpResponse.getStatusCode();
 
@@ -279,7 +289,7 @@ public class HttpClientUtils {
     }
 
 
-    private Map<String, List<String>> getResponseHeaders(HttpResponse response) {
+    private Map<String, List<String>> headersToMap(HttpResponse response) {
         Map<String, List<String>> respHeader = new HashMap<>();
         for (Header header : response.getAllHeaders()) {
             String headName = header.getName();

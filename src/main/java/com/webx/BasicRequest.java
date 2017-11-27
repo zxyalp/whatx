@@ -39,7 +39,7 @@ public class BasicRequest {
     public static void main(String[] args) {
 
 //        doGet();
-        doPostHandle();
+        doPost();
     }
 
 
