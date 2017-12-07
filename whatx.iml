@@ -7,6 +7,9 @@
           <file>file://$MODULE_DIR$/src/main/resources/httpClient-base.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/base/BaseClientConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/config/ClientConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/HttpCenterConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/resources/httpClientBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java</file>
         </fileset>
       </configuration>
     </facet>

@@ -26,6 +26,6 @@
         <bean id="requestConfig" factory-bean="requestConfigBuilder" factory-method="build"/>
 
         <!-- 获取httpClientContext的实例 -->
-        <bean id="httpClientContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
+        <bean id="httpContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
 
 </beans>

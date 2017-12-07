@@ -45,7 +45,11 @@ public class HttpClientUtils {
     private static HttpClientUtils httpClientUtils = null;
 
     @Autowired
-    private HttpClientContext context;
+    private HttpClientContext httpClientContext;
+
+
+    @Autowired
+    private RequestConfig requestConfig;
 
     private HttpClientUtils() {
 
@@ -235,16 +239,7 @@ public class HttpClientUtils {
 
     private SimpleHttpResponse executeInternal(HttpRequestBase method) throws Exception {
 
-        HttpClientContext context = HttpContext.getInstance();
-
-        RequestConfig requestConfig = RequestConfig.custom()
-                .setCookieSpec(CookieSpecs.STANDARD)
-                .setSocketTimeout(10000)
-                .setConnectTimeout(10000)
-                .setConnectionRequestTimeout(10000)
-                .build();
-
-        return executeInternal(method, context, requestConfig);
+        return executeInternal(method, httpClientContext, requestConfig);
     }
 
 
