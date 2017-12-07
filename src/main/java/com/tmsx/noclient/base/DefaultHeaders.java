@@ -10,5 +10,6 @@ import java.util.List;
  */
 public class DefaultHeaders {
 
-    private List<Header> headers;
+    private Header[] headers;
+
 }
