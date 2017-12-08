@@ -60,6 +60,11 @@ public class SimpleHttpRequest {
         return this;
     }
 
+    public SimpleHttpRequest addHeadersMap(Map<String, String> headersMap){
+        this.header = headersMap;
+        return this;
+    }
+
 
     public SimpleHttpRequest addFormData(String key, String value) {
         if (formData == null) {

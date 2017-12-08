@@ -10,6 +10,7 @@
           <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/HttpCenterConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/resources/httpClientBeans.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java</file>
         </fileset>
       </configuration>
     </facet>

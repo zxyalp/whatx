@@ -15,7 +15,7 @@ public class SimuHttpTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void simuTest() throws Exception{
-        SimuClient.login();
+         new SimuClient().login();
     }
 
 }

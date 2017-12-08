@@ -1,11 +1,13 @@
 package com.tmsx.noclient.simu;
 
+import com.tmsx.noclient.base.DefaultHeaders;
 import com.tmsx.noclient.base.HttpClientUtils;
 import com.tmsx.noclient.base.SimpleHttpRequest;
 import com.tmsx.noclient.base.SimpleHttpResponse;
 import com.tmsx.noclient.context.TestContextHolder;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
 
@@ -17,10 +19,14 @@ import java.util.*;
 public class SimuClient {
     private static final Log loggger = LogFactory.getLog(SimuClient.class);
 
+    @Autowired
+    private DefaultHeaders defaultHeaders;
 
-    public static void login(){
+    public void login(){
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
         request.setUrl(TestContextHolder.LOGIN_SIMU_URL);
+
+        System.out.println(defaultHeaders.getHeaders());
         Map<String, String> formData =new HashMap<>();
         formData.put("idNo", "110101198701011954");
         formData.put("idType", "0");
