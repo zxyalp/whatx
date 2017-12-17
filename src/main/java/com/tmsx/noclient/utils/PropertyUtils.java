@@ -9,13 +9,13 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- *
+ * 读取property文件工具类
  * @author yang.zhou
  * @date 2017/11/1
  */
-public class PropertyUtil {
+public class PropertyUtils {
 
-    private static final Log logger = LogFactory.getLog(PropertyUtil.class);
+    private static final Log logger = LogFactory.getLog(PropertyUtils.class);
 
     private static Properties props;
 
@@ -29,7 +29,7 @@ public class PropertyUtil {
 
         InputStream in = null;
         try {
-            in = PropertyUtil.class.getClassLoader().getResourceAsStream("config.properties");
+            in = PropertyUtils.class.getClassLoader().getResourceAsStream("config.properties");
             props.load(in);
         }catch (FileNotFoundException e){
             logger.error("文件未找到.",e);

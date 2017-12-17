@@ -6,6 +6,6 @@ package com.tmsx.noclient.utils;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(PropertyUtil.getProperty("simu.user"));
+        System.out.println(PropertyUtils.getProperty("simu.user"));
     }
 }

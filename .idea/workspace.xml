@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,7 +23,7 @@
       <file leaf-file-name="SimpleHttpRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
+            <state relative-caret-position="1746">
               <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
               <folding>
                 <element signature="e#2147#2148#0" expanded="true" />
@@ -40,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java">
+      <file leaf-file-name="PropertyUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="311">
+              <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/webx/WebClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/base/SimpleHttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/base/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/client/helper/SimuWebHelper.java" />
@@ -130,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/app.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -171,6 +173,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" />
       </list>
     </option>
   </component>
@@ -234,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,15 +255,42 @@
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
               <item name="whatx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -900,7 +932,9 @@
       <workItem from="1512638390284" duration="12582000" />
       <workItem from="1513003358953" duration="850000" />
       <workItem from="1513394874028" duration="1419000" />
-      <workItem from="1513490950408" duration="959000" />
+      <workItem from="1513490950408" duration="1661000" />
+      <workItem from="1513515097029" duration="10000" />
+      <workItem from="1513518456871" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1508810397014</created>
@@ -1007,7 +1041,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512644786154</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="commit">
+      <created>1513491945444</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1513491945444</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1043,7 +1084,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191712000" />
+    <option name="totallyTimeSpent" value="194209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1056,20 +1097,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5482815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26226014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2675906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43535188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1123,7 +1164,8 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="add client" />
     <MESSAGE value="add header" />
-    <option name="LAST_COMMIT_MESSAGE" value="add header" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1382,16 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1402,7 +1434,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
+        <state relative-caret-position="1746">
           <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
           <folding>
             <element signature="e#2147#2148#0" expanded="true" />
@@ -1415,7 +1447,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,6 @@
 package com.tmsx.noclient.context;
 
-import com.tmsx.noclient.utils.PropertyUtil;
+import com.tmsx.noclient.utils.PropertyUtils;
 
 /**
  *
@@ -9,8 +9,8 @@ import com.tmsx.noclient.utils.PropertyUtil;
  */
 public class TestContextHolder {
 
-    public static final String LOGIN_SIMU_URL = PropertyUtil.getProperty("simu.url");
-    public static final String CUST_ID = PropertyUtil.getProperty("simu.user");
-    public static final String PASSWORD = PropertyUtil.getProperty("simu.password");
+    public static final String LOGIN_SIMU_URL = PropertyUtils.getProperty("simu.url");
+    public static final String CUST_ID = PropertyUtils.getProperty("simu.user");
+    public static final String PASSWORD = PropertyUtils.getProperty("simu.password");
 
 }
