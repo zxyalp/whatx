@@ -1,6 +1,6 @@
 package com.tmsx.noclient.config;
 
-import com.tmsx.noclient.base.DefaultHeaders;
+import com.tmsx.noclient.base.SimpleHeaders;
 import org.apache.http.client.protocol.HttpClientContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class HttpBeanConfig {
     }
 
     @Bean
-    public DefaultHeaders defaultHeaders(){
+    public SimpleHeaders defaultHeaders(){
 
         Map<String, String> headersMap = new HashMap<>();
         headersMap.put("accept", "*/*");
@@ -33,10 +33,10 @@ public class HttpBeanConfig {
         headersMap.put("user-agent", "Chrome/60.0.3112.90 Safari/537.36");
         headersMap.put("x-requested-with", "XMLHttpRequest");
 
-        DefaultHeaders defaultHeaders = new DefaultHeaders();
-        defaultHeaders.setHeaders(headersMap);
+        SimpleHeaders simpleHeaders = new SimpleHeaders();
+        simpleHeaders.setHeaders(headersMap);
 
-        return defaultHeaders;
+        return simpleHeaders;
     }
 
 }

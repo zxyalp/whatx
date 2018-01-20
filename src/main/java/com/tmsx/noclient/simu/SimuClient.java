@@ -1,6 +1,6 @@
 package com.tmsx.noclient.simu;
 
-import com.tmsx.noclient.base.DefaultHeaders;
+import com.tmsx.noclient.base.SimpleHeaders;
 import com.tmsx.noclient.base.HttpClientUtils;
 import com.tmsx.noclient.base.SimpleHttpRequest;
 import com.tmsx.noclient.base.SimpleHttpResponse;
@@ -21,13 +21,13 @@ public class SimuClient {
     private static final Logger logger = LoggerFactory.getLogger(SimuClient.class);
 
     @Autowired
-    private DefaultHeaders defaultHeaders;
+    private SimpleHeaders simpleHeaders;
 
     public void login(){
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
         request.setUrl(TestContextHolder.LOGIN_SIMU_URL);
 
-        System.out.println(defaultHeaders.getHeaders());
+        System.out.println(simpleHeaders.getHeaders());
         Map<String, String> formData =new HashMap<>();
         formData.put("idNo", "110101198701011954");
         formData.put("idType", "0");

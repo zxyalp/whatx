@@ -10,7 +10,7 @@ import java.util.*;
  * @author yang.zhou
  * @date 2017/12/6
  */
-public class DefaultHeaders {
+public class SimpleHeaders {
 
     private Map<String, String> headers;
 
