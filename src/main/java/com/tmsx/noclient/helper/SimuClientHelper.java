@@ -1,21 +1,21 @@
 package com.tmsx.noclient.helper;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.http.cookie.Cookie;
-import org.springframework.context.annotation.ComponentScan;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by yang.zhou on 2017/10/31.
+ *
+ * @author yang.zhou
+ * @date 2017/10/31
  */
 @Component
 public class SimuClientHelper {
 
-    private static final Log logger = LogFactory.getLog(SimuClientHelper.class);
+    private static final Logger logger = LoggerFactory.getLogger(SimuClientHelper.class);
 
     public SimuClientHelper(){
 

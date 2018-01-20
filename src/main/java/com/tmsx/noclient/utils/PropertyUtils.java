@@ -1,7 +1,8 @@
 package com.tmsx.noclient.utils;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +16,7 @@ import java.util.Properties;
  */
 public class PropertyUtils {
 
-    private static final Log logger = LogFactory.getLog(PropertyUtils.class);
+    private static final Logger logger = LoggerFactory.getLogger(PropertyUtils.class);
 
     private static Properties props;
 
@@ -34,7 +35,7 @@ public class PropertyUtils {
         }catch (FileNotFoundException e){
             logger.error("文件未找到.",e);
         }catch (IOException i){
-            logger.error(i);
+            logger.error("I/O异常",i);
         }finally {
             if (null != in){
                 try {

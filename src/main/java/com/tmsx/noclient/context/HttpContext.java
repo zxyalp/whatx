@@ -1,8 +1,8 @@
 package com.tmsx.noclient.context;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.http.client.protocol.HttpClientContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -11,7 +11,7 @@ import org.apache.http.client.protocol.HttpClientContext;
  */
 public class HttpContext {
 
-    private static final Log logger = LogFactory.getLog(HttpContext.class);
+    private static final Logger logger = LoggerFactory.getLogger(HttpContext.class);
 
     private static HttpClientContext context = null;
 

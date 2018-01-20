@@ -5,8 +5,8 @@ import com.tmsx.noclient.base.HttpClientUtils;
 import com.tmsx.noclient.base.SimpleHttpRequest;
 import com.tmsx.noclient.base.SimpleHttpResponse;
 import com.tmsx.noclient.context.TestContextHolder;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
@@ -17,7 +17,8 @@ import java.util.*;
  * @date 2017/11/23
  */
 public class SimuClient {
-    private static final Log loggger = LogFactory.getLog(SimuClient.class);
+
+    private static final Logger logger = LoggerFactory.getLogger(SimuClient.class);
 
     @Autowired
     private DefaultHeaders defaultHeaders;

@@ -2,8 +2,6 @@ package com.tmsx.noclient.base;
 
 import com.alibaba.fastjson.JSONObject;
 import com.tmsx.noclient.context.HttpContext;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.http.*;
 import org.apache.http.client.config.CookieSpecs;
 import org.apache.http.client.config.RequestConfig;
@@ -22,6 +20,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -40,7 +40,7 @@ import java.util.Map;
  */
 public class HttpClientUtils {
 
-    private static final Log logger = LogFactory.getLog(HttpClientUtils.class);
+    private static final Logger logger = LoggerFactory.getLogger(HttpClientUtils.class);
 
     private static HttpClientUtils httpClientUtils = null;
 
