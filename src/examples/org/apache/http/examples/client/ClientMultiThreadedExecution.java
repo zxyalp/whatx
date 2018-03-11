@@ -38,7 +38,6 @@ import org.apache.http.util.EntityUtils;
 
 /**
  * An example that performs GETs from multiple threads.
- *
  */
 public class ClientMultiThreadedExecution {
 
@@ -55,9 +54,9 @@ public class ClientMultiThreadedExecution {
         try {
             // create an array of URIs to perform GETs on
             String[] urisToGet = {
-                "http://hc.apache.org/",
-                "http://hc.apache.org/httpcomponents-core-ga/",
-                "http://hc.apache.org/httpcomponents-client-ga/",
+                    "http://hc.apache.org/",
+                    "http://hc.apache.org/httpcomponents-core-ga/",
+                    "http://hc.apache.org/httpcomponents-client-ga/",
             };
 
             // create a thread for each URI

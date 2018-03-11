@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- *
  * @author yang.zhou
  * @date 2017/11/28
  */

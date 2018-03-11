@@ -55,7 +55,7 @@ public class ClientCustomSSL {
         // Allow TLSv1 protocol only
         SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(
                 sslcontext,
-                new String[] { "TLSv1" },
+                new String[]{"TLSv1"},
                 null,
                 SSLConnectionSocketFactory.getDefaultHostnameVerifier());
         CloseableHttpClient httpclient = HttpClients.custom()

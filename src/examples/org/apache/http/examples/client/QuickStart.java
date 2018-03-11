@@ -65,7 +65,7 @@ public class QuickStart {
             }
 
             HttpPost httpPost = new HttpPost("http://httpbin.org/post");
-            List <NameValuePair> nvps = new ArrayList <NameValuePair>();
+            List<NameValuePair> nvps = new ArrayList<NameValuePair>();
             nvps.add(new BasicNameValuePair("username", "vip"));
             nvps.add(new BasicNameValuePair("password", "secret"));
             httpPost.setEntity(new UrlEncodedFormEntity(nvps));

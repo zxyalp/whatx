@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
  * @author yang.zhou
  * @date 2017/10/26
  */
@@ -57,18 +56,18 @@ public class CustomContext {
                 System.out.println("---------------------------");
                 System.out.println(response.getStatusLine());
                 List<Cookie> cookies = cookieStore.getCookies();
-                for (Cookie cookie:cookies){
+                for (Cookie cookie : cookies) {
                     System.out.println("Local cookie" + cookie);
                 }
                 System.out.println(EntityUtils.toString(response.getEntity()));
                 EntityUtils.consume(response.getEntity());
-            }finally {
+            } finally {
                 response.close();
             }
 
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 httpClient.close();
             } catch (IOException e) {

@@ -42,7 +42,7 @@ import org.apache.http.util.EntityUtils;
  */
 public class ClientExecuteProxy {
 
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args) throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         try {
             HttpHost target = new HttpHost("httpbin.org", 443, "https");

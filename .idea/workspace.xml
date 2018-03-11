@@ -2,21 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_10_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientChunkEncodedPost.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientChunkEncodedPost.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientConfiguration.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientCustomSSL.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientCustomSSL.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientEvictExpiredConnections.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientEvictExpiredConnections.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientExecuteProxy.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientExecuteProxy.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientExecuteSOCKS.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientExecuteSOCKS.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientMultiThreadedExecution.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientMultiThreadedExecution.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientProxyAuthentication.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientProxyAuthentication.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientWithRequestFuture.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientWithRequestFuture.java" />
+      <change beforePath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/QuickStart.java" afterPath="$PROJECT_DIR$/src/examples/org/apache/http/examples/client/QuickStart.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" />
-      <change beforePath="$PROJECT_DIR$/whatx.iml" afterPath="$PROJECT_DIR$/whatx.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/App.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/App.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/HttpDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/HttpDemo.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/WebClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/WebClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webx/ZhiHu.java" afterPath="$PROJECT_DIR$/src/main/java/com/webx/ZhiHu.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/httpClient.properties" afterPath="$PROJECT_DIR$/src/main/resources/httpClient.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" afterPath="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +49,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimuClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java">
+      <file leaf-file-name="SimpleHttpRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+            <state relative-caret-position="833">
+              <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+              <folding>
+                <element signature="e#2148#2149#0" expanded="true" />
+                <element signature="e#2188#2189#0" expanded="true" />
+                <marker date="1520762669370" expanded="true" signature="1229:1257" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleHttpResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="767">
+              <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -42,8 +118,8 @@
       <file leaf-file-name="PropertyUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="-103">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,84 +127,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringScanMarker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="73" column="9" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="73" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultHeaders.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultHeaders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TmsCounterHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/TmsCounterHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimuClientHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
+      <file leaf-file-name="HttpBeanConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestContextHolder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,9 +192,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/app.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClientConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/ClientConfig.java" />
@@ -182,7 +206,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpClientContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SMCenterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/RequestConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClient.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClient-base.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/ComponentScanConfig.java" />
@@ -198,17 +224,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuLineHelper.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" />
       </list>
     </option>
@@ -226,11 +250,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="33" />
+    <option name="width" value="1924" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -273,9 +297,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -349,17 +373,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tmsx" type="462c0819:PsiDirectoryNode" />
               <item name="noclient" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="whatx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="tmsx" type="462c0819:PsiDirectoryNode" />
-              <item name="noclient" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -408,14 +421,22 @@
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
               <item name="whatx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
               <item name="whatx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
@@ -431,7 +452,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/tms/2.0.15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -440,10 +461,6 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\hub\whatx\src\test\resources" />
-      <recent name="H:\hub\whatx\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\hub\whatx\src\main" />
       <recent name="H:\hub\whatx\src\main\java\resources" />
@@ -1001,16 +1018,11 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\yang.zhou\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1074,14 +1086,15 @@
       <workItem from="1512470123797" duration="2210000" />
       <workItem from="1512547526675" duration="6291000" />
       <workItem from="1512631780367" duration="594000" />
-      <workItem from="1512638390284" duration="12657000" />
-      <workItem from="1513079111366" duration="24000" />
-      <workItem from="1513135126139" duration="824000" />
-      <workItem from="1513218485640" duration="7000" />
-      <workItem from="1513939752955" duration="748000" />
-      <workItem from="1515497183460" duration="979000" />
-      <workItem from="1515498269937" duration="34000" />
-      <workItem from="1516446949002" duration="1295000" />
+      <workItem from="1512638390284" duration="12582000" />
+      <workItem from="1513003358953" duration="850000" />
+      <workItem from="1513394874028" duration="1419000" />
+      <workItem from="1513490950408" duration="1661000" />
+      <workItem from="1513515097029" duration="10000" />
+      <workItem from="1513518456871" duration="2456000" />
+      <workItem from="1519738996787" duration="4000" />
+      <workItem from="1519739526350" duration="2000" />
+      <workItem from="1520762605074" duration="172000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1508810397014</created>
@@ -1188,28 +1201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1512644786154</updated>
     </task>
-    <task id="LOCAL-00016" summary="add header">
-      <created>1512733648246</created>
+    <task id="LOCAL-00016" summary="commit">
+      <created>1513491945444</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1512733648246</updated>
+      <updated>1513491945444</updated>
     </task>
-    <task id="LOCAL-00017" summary="add header">
-      <created>1513939977335</created>
+    <task id="LOCAL-00017" summary="代码优化">
+      <created>1513523829986</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1513939977335</updated>
+      <updated>1513523829986</updated>
     </task>
-    <task id="LOCAL-00018" summary="add header">
-      <created>1515497380382</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1515497380382</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1245,10 +1251,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192382000" />
+    <option name="totallyTimeSpent" value="195058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1258,20 +1264,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5482815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39605463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43535188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1280,7 +1287,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1325,7 +1331,9 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="add client" />
     <MESSAGE value="add header" />
-    <option name="LAST_COMMIT_MESSAGE" value="add header" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="代码优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1338,6 +1346,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar!/org/apache/http/HttpHeaders.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/logon/CreateUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimuHttpClientUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/RequestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/HttpDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-595">
@@ -1345,41 +1377,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/utils/URIBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/methods/HttpRequestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE-sources.jar!/org/springframework/util/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="83" column="28" lean-forward="false" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar!/org/apache/http/HttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/utils/URIBuilder.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/methods/HttpRequestBase.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE-sources.jar!/org/springframework/util/StringUtils.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar!/org/apache/http/HttpResponse.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/webx/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1387,13 +1389,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/config/RequestConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="437" column="73" lean-forward="false" selection-start-line="437" selection-start-column="39" selection-end-line="437" selection-end-column="73" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/config/RequestConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/ContextScanMarker.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/HelperScanMarker.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseScanMarker.java" />
@@ -1423,13 +1426,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/protocol/HttpClientContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/client/protocol/HttpClientContext.java" />
     <entry file="file://$PROJECT_DIR$/src/examples/org/apache/http/examples/client/ClientAbortMethod.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1458,6 +1462,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/examples/org/apache/http/examples/client/QuickStart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1465,249 +1476,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/impl/client/HttpClients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/httpClientBeans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/RequestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/WebClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="137" column="19" lean-forward="false" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/CustomRequestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/TmsCounterHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/impl/client/HttpClients.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="170" column="73" lean-forward="false" selection-start-line="170" selection-start-column="36" selection-end-line="170" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/httpClientBeans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="234">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="73" column="9" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="73" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="-103">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <marker date="1520762669370" expanded="true" signature="1229:1257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="86" column="1" lean-forward="false" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -54,7 +54,7 @@ import org.apache.http.util.EntityUtils;
  */
 public class ClientExecuteSOCKS {
 
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args) throws Exception {
         Registry<ConnectionSocketFactory> reg = RegistryBuilder.<ConnectionSocketFactory>create()
                 .register("http", new MyConnectionSocketFactory())
                 .build();

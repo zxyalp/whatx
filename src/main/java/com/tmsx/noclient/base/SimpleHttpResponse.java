@@ -51,22 +51,22 @@ public class SimpleHttpResponse {
         this.messageBody = messageBody;
     }
 
-    public String showResponseHeaders(){
+    public String showResponseHeaders() {
 
         StringBuilder stringBuilder = new StringBuilder("Response Headers:: \n");
 
-        if (!StringUtils.isEmpty(this.headers)){
-            for (Map.Entry<String, List<String>> entry: this.headers.entrySet()){
+        if (!StringUtils.isEmpty(this.headers)) {
+            for (Map.Entry<String, List<String>> entry : this.headers.entrySet()) {
                 stringBuilder.append(entry.getKey()).append(": ");
-                for (String item: entry.getValue()){
+                for (String item : entry.getValue()) {
                     stringBuilder.append(item);
-                    if (entry.getValue().size()>1){
+                    if (entry.getValue().size() > 1) {
                         stringBuilder.append(", ");
                     }
                 }
                 stringBuilder.append("\n");
             }
-        }else {
+        } else {
             stringBuilder.append("< 空 >\n");
         }
 

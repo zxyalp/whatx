@@ -1,7 +1,6 @@
 package com.webx;
 
 /**
- *
  * @author yang.zhou
  * @date 2017/10/26
  */
@@ -11,7 +10,7 @@ public class ZhiHu {
 
     }
 
-    public static void BaseClient(){
+    public static void BaseClient() {
 
     }
 }

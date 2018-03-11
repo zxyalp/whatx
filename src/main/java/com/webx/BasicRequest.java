@@ -20,16 +20,15 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * httpclient使用流程
- 1. 创建HttpClient对象。
- 2. 创建请求方法的实例，并指定请求URL。如果需要发送GET请求， 创建HttpGet对象； 如果需要发送POST请求，创建HttpPost对象。
- 3. 如果需要发送请求参数， 可调用HttpGet、 HttpPost共同的setParams(HetpParams params)方法来添加请求参数； 对于HttpPost对象而言，
-    也可调用setEntity(HttpEntity entity)方法来设置请求参数。
- 4. 调用HttpClient对象的execute(HttpUriRequest request)发送请求该方法返回一个HttpResponse。
- 5. 调用HttpResponse的getAllHeaders()、 getHeaders(String name)等方法可获取服务器的响应头； 调用HttpResponse的getEntity()方法
-    可获取HttpEntity对象，该对象包装了服务器的响应内容。 程序可通过该对象获取服务器的响应内容。
- 6. 释放连接。 无论执行方法是否成功， 都必须释放连接。
+ * 1. 创建HttpClient对象。
+ * 2. 创建请求方法的实例，并指定请求URL。如果需要发送GET请求， 创建HttpGet对象； 如果需要发送POST请求，创建HttpPost对象。
+ * 3. 如果需要发送请求参数， 可调用HttpGet、 HttpPost共同的setParams(HetpParams params)方法来添加请求参数； 对于HttpPost对象而言，
+ * 也可调用setEntity(HttpEntity entity)方法来设置请求参数。
+ * 4. 调用HttpClient对象的execute(HttpUriRequest request)发送请求该方法返回一个HttpResponse。
+ * 5. 调用HttpResponse的getAllHeaders()、 getHeaders(String name)等方法可获取服务器的响应头； 调用HttpResponse的getEntity()方法
+ * 可获取HttpEntity对象，该对象包装了服务器的响应内容。 程序可通过该对象获取服务器的响应内容。
+ * 6. 释放连接。 无论执行方法是否成功， 都必须释放连接。
  *
  * @author yang.zhou
  * @date 2017/10/26
@@ -43,12 +42,12 @@ public class BasicRequest {
     }
 
 
-    public static void doGet(){
+    public static void doGet() {
         String url = "http://192.168.221.216:15080/trade/login/login.htm?targeturl=http://192.168.221.216:4085/newpcsm/buylist.html";
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        try{
+        try {
 
             HttpGet httpGet = new HttpGet(url);
 
@@ -61,11 +60,11 @@ public class BasicRequest {
             System.out.println(httpGet.getURI());
             System.out.println(content);
 
-        } catch (ClientProtocolException c){
+        } catch (ClientProtocolException c) {
             c.fillInStackTrace();
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 httpClient.close();
             } catch (IOException e) {
@@ -74,7 +73,7 @@ public class BasicRequest {
         }
     }
 
-    public static void doPost(){
+    public static void doPost() {
 
         String url = "http://192.168.221.23:8080/hb_crm/login/checkUser.do";
 
@@ -91,7 +90,7 @@ public class BasicRequest {
             nameValuePairs.add(new BasicNameValuePair("password", "1"));
             nameValuePairs.add(new BasicNameValuePair("username", "ronghua.gan"));
             nameValuePairs.add(new BasicNameValuePair("verycode", "1"));
-            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs,"UTF-8"));
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
 
             CloseableHttpResponse response = httpClient.execute(httpPost);
 
@@ -101,23 +100,23 @@ public class BasicRequest {
 
             System.out.println(httpPost.getURI());
             System.out.println(httpPost.getMethod());
-            System.out.println("请求头部信息："+Arrays.toString(httpPost.getAllHeaders()));
+            System.out.println("请求头部信息：" + Arrays.toString(httpPost.getAllHeaders()));
 
             System.out.println(responseContent);
             System.out.println(response);
             System.out.println(response.getStatusLine().getStatusCode() == HttpStatus.SC_OK);
-            System.out.println("返回头部信息："+Arrays.toString(response.getAllHeaders()));
+            System.out.println("返回头部信息：" + Arrays.toString(response.getAllHeaders()));
 
             EntityUtils.consume(entity);
 
-            } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
 
-    public static void doPostHandle(){
+    public static void doPostHandle() {
 
         String url = "http://192.168.221.23:8080/hb_crm/login/checkUser.do";
 
@@ -134,7 +133,7 @@ public class BasicRequest {
             nameValuePairs.add(new BasicNameValuePair("password", "1"));
             nameValuePairs.add(new BasicNameValuePair("username", "ronghua.gan"));
             nameValuePairs.add(new BasicNameValuePair("verycode", "1"));
-            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs,"UTF-8"));
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
 
             ResponseHandler<String> responseHandler = response -> {
                 int status = response.getStatusLine().getStatusCode();
@@ -150,19 +149,18 @@ public class BasicRequest {
 
             System.out.println(httpPost.getURI());
             System.out.println(httpPost.getMethod());
-            System.out.println("请求头部信息："+Arrays.toString(httpPost.getAllHeaders()));
+            System.out.println("请求头部信息：" + Arrays.toString(httpPost.getAllHeaders()));
 
             System.out.println(responseBody);
 
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
 
-
-    public static Header[] addHeaders(){
+    public static Header[] addHeaders() {
         List<Header> headers = new ArrayList<>();
         headers.add(new BasicHeader("accept", "*/*"));
         headers.add(new BasicHeader("content-type", "application/x-www-form-urlencoded"));
@@ -173,9 +171,7 @@ public class BasicRequest {
     }
 
 
-
-
-    public static void cookieManager(){
+    public static void cookieManager() {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("http://192.168.221.23:8080/hb_crm/login/checkUser.do");
 

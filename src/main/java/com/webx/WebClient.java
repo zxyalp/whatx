@@ -41,7 +41,7 @@ public class WebClient {
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "utf-8"));
 
             CloseableHttpResponse response = httpClient.execute(httpPost);
-            try{
+            try {
                 HttpEntity entity = response.getEntity();
 
                 System.out.println("Login form get:" + response.getStatusLine());
@@ -52,18 +52,18 @@ public class WebClient {
                 System.out.println("Initial set of cookie:");
 
                 List<Cookie> cookies = new ArrayList<>();
-                if (cookies.isEmpty()){
+                if (cookies.isEmpty()) {
                     System.out.println("None");
-                }else {
-                    for (Cookie cookie:cookies){
-                        System.out.println("-"+cookie);
+                } else {
+                    for (Cookie cookie : cookies) {
+                        System.out.println("-" + cookie);
                     }
                 }
-            }finally {
+            } finally {
                 response.close();
             }
 
-        }finally {
+        } finally {
             httpClient.close();
         }
 

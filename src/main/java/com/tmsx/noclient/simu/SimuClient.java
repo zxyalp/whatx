@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.*;
 
 /**
- *
  * @author yang.zhou
  * @date 2017/11/23
  */
@@ -23,12 +22,12 @@ public class SimuClient {
     @Autowired
     private DefaultHeaders defaultHeaders;
 
-    public void login(){
+    public void login() {
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
         request.setUrl(TestContextHolder.LOGIN_SIMU_URL);
 
         System.out.println(defaultHeaders.getHeaders());
-        Map<String, String> formData =new HashMap<>();
+        Map<String, String> formData = new HashMap<>();
         formData.put("idNo", "110101198701011954");
         formData.put("idType", "0");
         formData.put("loginErr", "0");
@@ -38,7 +37,6 @@ public class SimuClient {
         SimpleHttpResponse response = HttpClientUtils.getInstance().doPost(request);
 
         System.out.println(response.toString());
-
 
 
     }

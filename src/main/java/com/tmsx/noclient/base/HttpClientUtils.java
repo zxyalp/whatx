@@ -57,9 +57,9 @@ public class HttpClientUtils {
 
     public static HttpClientUtils getInstance() {
         if (httpClientUtils == null) {
-            synchronized(HttpClientUtils.class){
-                if (httpClientUtils == null){
-                    httpClientUtils =  new HttpClientUtils();
+            synchronized (HttpClientUtils.class) {
+                if (httpClientUtils == null) {
+                    httpClientUtils = new HttpClientUtils();
                 }
             }
         }
@@ -127,7 +127,7 @@ public class HttpClientUtils {
     }
 
 
-    public SimpleHttpResponse doPost(String httUrl, Map<String, String> paramMap){
+    public SimpleHttpResponse doPost(String httUrl, Map<String, String> paramMap) {
         SimpleHttpRequest request = getBasicRequest();
         request.setUrl(httUrl);
         request.setFormData(paramMap);
@@ -184,6 +184,7 @@ public class HttpClientUtils {
 
     /**
      * 3、build body
+     *
      * @param httpMethod
      * @param request
      */

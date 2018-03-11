@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
  * @author yang.zhou
  * @date 2017/11/1
  */
@@ -19,12 +18,12 @@ import java.util.Map;
 public class HttpBeanConfig {
 
     @Bean
-    public HttpClientContext httpClientContext(){
+    public HttpClientContext httpClientContext() {
         return HttpClientContext.create();
     }
 
     @Bean
-    public DefaultHeaders defaultHeaders(){
+    public DefaultHeaders defaultHeaders() {
 
         Map<String, String> headersMap = new HashMap<>();
         headersMap.put("accept", "*/*");

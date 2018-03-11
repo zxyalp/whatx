@@ -60,7 +60,7 @@ public class SimpleHttpRequest {
         return this;
     }
 
-    public SimpleHttpRequest addHeadersMap(Map<String, String> headersMap){
+    public SimpleHttpRequest addHeadersMap(Map<String, String> headersMap) {
         this.header = headersMap;
         return this;
     }

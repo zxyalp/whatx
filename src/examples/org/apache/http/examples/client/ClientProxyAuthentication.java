@@ -59,8 +59,8 @@ public class ClientProxyAuthentication {
             HttpHost proxy = new HttpHost("localhost", 8888);
 
             RequestConfig config = RequestConfig.custom()
-                .setProxy(proxy)
-                .build();
+                    .setProxy(proxy)
+                    .build();
             HttpGet httpget = new HttpGet("/basic-auth/user/passwd");
             httpget.setConfig(config);
 

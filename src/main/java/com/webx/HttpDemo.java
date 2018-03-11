@@ -18,7 +18,8 @@ import java.util.Arrays;
 import java.util.List;
 
 
-/**http test
+/**
+ * http test
  *
  * @author yang.zhou
  * @date 2017/10/24
@@ -30,10 +31,9 @@ public class HttpDemo {
         //httpGet();
 
 
-
     }
 
-    public static void httpGet(){
+    public static void httpGet() {
         CloseableHttpClient client = HttpClients.createDefault();
 
         HttpGet httpGet = new HttpGet("http://192.168.221.216:4087/tms-console/tradeconsole/appointopenday/appointOpenDayIndex.htm");
@@ -49,15 +49,15 @@ public class HttpDemo {
 
             HttpEntity entity = response1.getEntity();
 
-             bufferIn = new BufferedInputStream(entity.getContent());
-             buffOut = new BufferedOutputStream(new FileOutputStream(new File("index.html")));
+            bufferIn = new BufferedInputStream(entity.getContent());
+            buffOut = new BufferedOutputStream(new FileOutputStream(new File("index.html")));
 
 
             byte[] buf = new byte[2048];
 
-            int len=-1;
+            int len = -1;
 
-            while ((len = bufferIn.read(buf)) !=-1){
+            while ((len = bufferIn.read(buf)) != -1) {
 
                 System.out.print(new String(buf));
             }
@@ -65,10 +65,10 @@ public class HttpDemo {
 
             EntityUtils.consume(entity);
 
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if (bufferIn!=null){
+        } finally {
+            if (bufferIn != null) {
                 try {
                     bufferIn.close();
                 } catch (IOException e) {
@@ -76,7 +76,7 @@ public class HttpDemo {
                 }
             }
 
-            if (buffOut != null){
+            if (buffOut != null) {
                 try {
                     bufferIn.close();
                 } catch (IOException e) {
@@ -88,7 +88,7 @@ public class HttpDemo {
 
     }
 
-    public static void httpPost(){
+    public static void httpPost() {
         CloseableHttpClient client = HttpClients.createDefault();
 
         HttpPost httpPost = new HttpPost("http://targethost/login");

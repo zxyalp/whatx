@@ -4,40 +4,40 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-            <property name="location" value="classpath:httpClient.properties"/>
-        </bean>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:httpClient.properties"/>
+    </bean>
 
-        <!-- 定义HttpClient工厂，这里使用HttpClientBuilder构建 -->
-        <bean id="httpClientBuilder" class="org.apache.http.impl.client.HttpClientBuilder" factory-method="create"/>
+    <!-- 定义HttpClient工厂，这里使用HttpClientBuilder构建 -->
+    <bean id="httpClientBuilder" class="org.apache.http.impl.client.HttpClientBuilder" factory-method="create"/>
 
-        <bean id="httpClient" factory-bean="httpClientBuilder" factory-method="build"/>
+    <bean id="httpClient" factory-bean="httpClientBuilder" factory-method="build"/>
 
-        <bean id="requestConfigBuilder" class="org.apache.http.client.config.RequestConfig.Builder">
-            <!-- 从连接池获取到连接的最长时间 -->
-            <property name="connectionRequestTimeout" value="${http.request.connectionRequestTimeout}"/>
-            <!-- 创建连接的最长时间 -->
-            <property name="connectTimeout" value="${http.request.connectTimeout}"/>
-            <!-- 数据传输的最长时间 -->
-            <property name="socketTimeout" value="${http.request.socketTimeout}"/>
-        </bean>
+    <bean id="requestConfigBuilder" class="org.apache.http.client.config.RequestConfig.Builder">
+        <!-- 从连接池获取到连接的最长时间 -->
+        <property name="connectionRequestTimeout" value="${http.request.connectionRequestTimeout}"/>
+        <!-- 创建连接的最长时间 -->
+        <property name="connectTimeout" value="${http.request.connectTimeout}"/>
+        <!-- 数据传输的最长时间 -->
+        <property name="socketTimeout" value="${http.request.socketTimeout}"/>
+    </bean>
 
-        <!-- requestConfig实例 -->
-        <bean id="requestConfig" factory-bean="requestConfigBuilder" factory-method="build"/>
+    <!-- requestConfig实例 -->
+    <bean id="requestConfig" factory-bean="requestConfigBuilder" factory-method="build"/>
 
-        <!-- 获取httpClientContext的实例 -->
-        <bean id="httpContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
+    <!-- 获取httpClientContext的实例 -->
+    <bean id="httpContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
 
-        <bean id="defaultHeaders" class="com.tmsx.noclient.base.DefaultHeaders">
-            <property name="headers">
-                <map>
-                    <entry key="accept" value="*/*" />
-                    <entry key="content-type" value="application/x-www-form-urlencoded"/>
-                    <entry key="accept-encoding" value="gzip, deflate"/>
-                    <entry key="user-agent" value="Chrome/60.0.3112.90 Safari/537.36"/>
-                    <entry key="x-requested-with" value="XMLHttpRequest"/>
-                </map>
-            </property>
-        </bean>
+    <bean id="defaultHeaders" class="com.tmsx.noclient.base.DefaultHeaders">
+        <property name="headers">
+            <map>
+                <entry key="accept" value="*/*"/>
+                <entry key="content-type" value="application/x-www-form-urlencoded"/>
+                <entry key="accept-encoding" value="gzip, deflate"/>
+                <entry key="user-agent" value="Chrome/60.0.3112.90 Safari/537.36"/>
+                <entry key="x-requested-with" value="XMLHttpRequest"/>
+            </map>
+        </property>
+    </bean>
 
 </beans>

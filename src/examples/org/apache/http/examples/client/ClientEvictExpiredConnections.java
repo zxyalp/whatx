@@ -53,9 +53,9 @@ public class ClientEvictExpiredConnections {
         try {
             // create an array of URIs to perform GETs on
             String[] urisToGet = {
-                "http://hc.apache.org/",
-                "http://hc.apache.org/httpcomponents-core-ga/",
-                "http://hc.apache.org/httpcomponents-client-ga/",
+                    "http://hc.apache.org/",
+                    "http://hc.apache.org/httpcomponents-core-ga/",
+                    "http://hc.apache.org/httpcomponents-client-ga/",
             };
 
             for (int i = 0; i < urisToGet.length; i++) {

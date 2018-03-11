@@ -11,11 +11,11 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
  * Created by yang.zhou on 2017/11/23.
  */
 @ContextConfiguration(classes = HttpCenterConfig.class)
-public class SimuHttpTest extends AbstractTestNGSpringContextTests{
+public class SimuHttpTest extends AbstractTestNGSpringContextTests {
 
     @Test
-    public void simuTest() throws Exception{
-         new SimuClient().login();
+    public void simuTest() throws Exception {
+        new SimuClient().login();
     }
 
 }
