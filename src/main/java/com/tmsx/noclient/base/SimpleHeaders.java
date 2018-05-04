@@ -2,15 +2,15 @@ package com.tmsx.noclient.base;
 
 import org.apache.http.Header;
 import org.apache.http.message.BasicHeader;
-import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-/**构建一个通用的Header
- *
+/**
+ * 构建一个通用的Header
  * @author yang.zhou
  * @date 2017/12/6
- */
+ **/
+
 public class SimpleHeaders {
 
     private Map<String, String> headers;

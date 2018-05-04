@@ -29,7 +29,7 @@ public class MocoClient {
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
         request.setUrl("http://127.0.0.1:12306/posts/new");
 
-//        System.out.println(simpleHeaders.getHeaders());
+        System.out.println(simpleHeaders.getHeaders());
         Map<String, String> headerMap = new HashMap<>();
         headerMap.put("content-type", "application/json");
 
