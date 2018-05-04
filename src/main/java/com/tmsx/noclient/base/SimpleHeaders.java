@@ -2,6 +2,7 @@ package com.tmsx.noclient.base;
 
 import org.apache.http.Header;
 import org.apache.http.message.BasicHeader;
+import org.springframework.stereotype.Component;
 
 import java.util.*;
 

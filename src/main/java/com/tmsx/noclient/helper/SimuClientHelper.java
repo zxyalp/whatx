@@ -24,8 +24,6 @@ public class SimuClientHelper {
     public static void loginTradeWeb(){
         Map<String, String> headerMap = new HashMap<>();
 
-
-
         Map<String, String>  requestMap = new HashMap<>();
 
 
