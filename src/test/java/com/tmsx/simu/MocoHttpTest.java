@@ -1,8 +1,10 @@
 package com.tmsx.simu;
 
+import com.tmsx.noclient.base.SimpleHeaders;
 import com.tmsx.noclient.config.HttpCenterConfig;
 import com.tmsx.noclient.simu.MocoClient;
 import com.tmsx.noclient.simu.SimuClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
@@ -14,9 +16,17 @@ import org.testng.annotations.Test;
 @ContextConfiguration(classes = HttpCenterConfig.class)
 public class MocoHttpTest extends AbstractTestNGSpringContextTests{
 
+    @Autowired
+    MocoClient mocoClient;
+
     @Test
-    public void mocoTest() throws Exception{
-         new MocoClient().testRequest();
+    public void getAllPostsTest() throws Exception{
+        mocoClient.getAllPosts();
+    }
+
+    @Test
+    public void getFirstPostTest() throws Exception{
+        mocoClient.getFirstPost();
     }
 
 }

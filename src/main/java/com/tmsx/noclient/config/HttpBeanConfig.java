@@ -24,7 +24,7 @@ public class HttpBeanConfig {
     }
 
     @Bean
-    public SimpleHeaders defaultHeaders(){
+    public SimpleHeaders simpleHeaders(){
 
         Map<String, String> headersMap = new HashMap<>();
         headersMap.put("accept", "*/*");

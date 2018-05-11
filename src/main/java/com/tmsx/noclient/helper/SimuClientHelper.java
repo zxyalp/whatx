@@ -12,7 +12,6 @@ import java.util.Map;
  * @author yang.zhou
  * @date 2017/10/31
  */
-@Component
 public class SimuClientHelper {
 
     private static final Logger logger = LoggerFactory.getLogger(SimuClientHelper.class);

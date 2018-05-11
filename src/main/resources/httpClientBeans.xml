@@ -28,13 +28,13 @@
         <!-- 获取httpClientContext的实例 -->
         <bean id="httpContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
 
-        <bean id="simpleHeaders" class="com.tmsx.noclient.base.SimpleHeaders">
+        <bean id="defaultHeaders" class="com.tmsx.noclient.base.SimpleHeaders">
             <property name="headers">
                 <map>
                     <entry key="accept" value="*/*" />
                     <entry key="content-type" value="application/x-www-form-urlencoded"/>
                     <entry key="accept-encoding" value="gzip, deflate"/>
-                    <entry key="user-agent" value="Chrome/60.0.3112.90 Safari/537.36"/>
+                    <!--<entry key="user-agent" value="Chrome/60.0.3112.90 Safari/537.36"/>-->
                     <entry key="x-requested-with" value="XMLHttpRequest"/>
                 </map>
             </property>

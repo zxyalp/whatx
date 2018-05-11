@@ -8,6 +8,8 @@ import com.tmsx.noclient.base.SimpleHttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +18,7 @@ import java.util.Map;
  * @author yang.zhou
  * @date 2018/5/4
  */
+@Component
 public class MocoClient {
 
 
@@ -24,26 +27,29 @@ public class MocoClient {
     @Autowired
     private SimpleHeaders simpleHeaders;
 
-    public void testRequest() throws Exception{
+    public void getFirstPost() throws Exception{
 
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
+
         request.setUrl("http://127.0.0.1:12306/posts/new");
-
-        System.out.println(simpleHeaders.getHeaders());
-        Map<String, String> headerMap = new HashMap<>();
-        headerMap.put("content-type", "application/json");
-
-        simpleHeaders.setHeaders(headerMap);
-
         Map<String, Object> jsonData =new HashMap<>();
         jsonData.put("id", 1);
         jsonData.put("title", "add new post");
         jsonData.put("content", "more post");
+
         request.setJsonData(new JSONObject(jsonData));
 
         SimpleHttpResponse response = HttpClientUtils.getInstance().doPost(request);
 
-        System.out.println(response.toString());
+        logger.info(response.getAllHeaders().toString());
+
+        logger.info(response.getMessageBody());
+
+    }
+
+    public void getAllPosts() throws Exception{
+        SimpleHttpResponse response = HttpClientUtils.getInstance().doGet("http://127.0.0.1:12306/posts/1");
+        logger.info(response.getMessageBody());
     }
 
 }

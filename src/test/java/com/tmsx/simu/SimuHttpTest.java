@@ -2,6 +2,7 @@ package com.tmsx.simu;
 
 import com.tmsx.noclient.config.HttpCenterConfig;
 import com.tmsx.noclient.simu.SimuClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.testng.annotations.Test;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -13,9 +14,12 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 @ContextConfiguration(classes = HttpCenterConfig.class)
 public class SimuHttpTest extends AbstractTestNGSpringContextTests{
 
+    @Autowired
+    private SimuClient simuClient;
+
     @Test
     public void simuTest() throws Exception{
-         new SimuClient().login();
+       simuClient.login();
     }
 
 }

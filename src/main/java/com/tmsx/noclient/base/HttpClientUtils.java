@@ -18,14 +18,16 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -44,22 +46,14 @@ public class HttpClientUtils {
 
     private static HttpClientUtils httpClientUtils = null;
 
-    @Autowired
-    private HttpClientContext httpClientContext;
-
-
-    @Autowired
-    private RequestConfig requestConfig;
-
     private HttpClientUtils() {
-
     }
 
     public static HttpClientUtils getInstance() {
         if (httpClientUtils == null) {
-            synchronized(HttpClientUtils.class){
-                if (httpClientUtils == null){
-                    httpClientUtils =  new HttpClientUtils();
+            synchronized (HttpClientUtils.class) {
+                if (httpClientUtils == null) {
+                    httpClientUtils = new HttpClientUtils();
                 }
             }
         }
@@ -77,8 +71,7 @@ public class HttpClientUtils {
             buildQueryParams(httpMethod, request);
 
             buildHeaderParams(httpMethod, request);
-
-            response = executeInternal(httpMethod);
+            response = execute(httpMethod);
 
         } catch (URISyntaxException u) {
             logger.error("URISyntaxException.", u);
@@ -89,6 +82,22 @@ public class HttpClientUtils {
             throw new RuntimeException("Error in invoking HTTP API", e);
         }
         return response;
+    }
+
+    /**
+     * Http Get请求
+     */
+    public SimpleHttpResponse doGet(String url, String token) {
+        SimpleHttpRequest request = getBasicRequest(token);
+        request.setUrl(url);
+        return doGet(request);
+    }
+
+
+    public SimpleHttpResponse doGet(String url) {
+        SimpleHttpRequest request = getBasicRequest();
+        request.setUrl(url);
+        return doGet(request);
     }
 
 
@@ -107,7 +116,10 @@ public class HttpClientUtils {
 
             buildEntityBody(httpMethod, request);
 
-            response = executeInternal(httpMethod);
+            HttpEntity entity = httpMethod.getEntity();
+
+            entity.writeTo(new FileOutputStream(new File("post.json")));
+            response = execute(httpMethod);
 
         } catch (Exception e) {
             logger.error("Error in invoking HTTP API", e);
@@ -127,7 +139,7 @@ public class HttpClientUtils {
     }
 
 
-    public SimpleHttpResponse doPost(String httUrl, Map<String, String> paramMap){
+    public SimpleHttpResponse doPost(String httUrl, Map<String, String> paramMap) {
         SimpleHttpRequest request = getBasicRequest();
         request.setUrl(httUrl);
         request.setFormData(paramMap);
@@ -135,8 +147,15 @@ public class HttpClientUtils {
     }
 
 
+    public SimpleHttpRequest getBasicRequest(String aToken) {
+
+        SimpleHttpRequest request = new SimpleHttpRequest();
+        request.addHeader("Cookie", aToken);
+        return request;
+    }
+
     public SimpleHttpRequest getBasicRequest() {
-        return new SimpleHttpRequest();
+        return getBasicRequest(null);
     }
 
 
@@ -184,6 +203,7 @@ public class HttpClientUtils {
 
     /**
      * 3、build body
+     *
      * @param httpMethod
      * @param request
      */
@@ -201,27 +221,22 @@ public class HttpClientUtils {
                     nameValuePairList.add(valuePair);
                 }
             }
-            try {
-                httpMethod.setEntity(new UrlEncodedFormEntity(nameValuePairList, "utf-8"));
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
+
+            httpMethod.setEntity(new UrlEncodedFormEntity(nameValuePairList, Charset.forName("utf-8")));
+
         } else if (request.getJsonData() != null) {
-
+            logger.info(new StringEntity(request.getJsonData(), ContentType.APPLICATION_JSON).toString());
             httpMethod.setEntity(new StringEntity(request.getJsonData(), ContentType.APPLICATION_JSON));
-
         } else if (request.getMultipartData() != null) {
-            Map<String, Object> multData = request.getMultipartData();
+            Map<String, Object> multiData = request.getMultipartData();
 
             MultipartEntityBuilder builder = MultipartEntityBuilder.create();
 
-
-            if (multData != null && !multData.isEmpty()) {
-                for (String name : multData.keySet()) {
-                    Object value = multData.get(name);
+            if (multiData != null && !multiData.isEmpty()) {
+                for (String name : multiData.keySet()) {
+                    Object value = multiData.get(name);
 
                     if (value instanceof String) {
-
                         StringBody stringBody = new StringBody((String) value, ContentType.TEXT_PLAIN);
                         builder.addPart(name, stringBody);
                     } else if (value instanceof File) {
@@ -237,20 +252,27 @@ public class HttpClientUtils {
     }
 
 
-    private SimpleHttpResponse executeInternal(HttpRequestBase method) throws Exception {
+    private SimpleHttpResponse execute(HttpRequestBase method) throws Exception {
 
-        return executeInternal(method, httpClientContext, requestConfig);
+        return execute(method, null, null);
     }
 
+    private SimpleHttpResponse execute(HttpRequestBase method, HttpClientContext context) throws Exception{
+        return execute(method, context, null);
+    }
 
-    private SimpleHttpResponse executeInternal(HttpRequestBase method, HttpClientContext context,
-                                               RequestConfig requestConfig) throws Exception {
+    private SimpleHttpResponse execute(HttpRequestBase method, RequestConfig config) throws Exception{
+        return execute(method, null, config);
+    }
+
+    private SimpleHttpResponse execute(HttpRequestBase method, HttpClientContext context,
+                                       RequestConfig config) throws Exception {
 
         SimpleHttpResponse simpleHttpResponse = new SimpleHttpResponse();
 
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        method.setConfig(requestConfig);
+        method.setConfig(config);
 
         CloseableHttpResponse response = httpClient.execute(method, context);
 
@@ -262,7 +284,7 @@ public class HttpClientUtils {
 
         EntityUtils.consume(entity);
 
-        simpleHttpResponse.setAllHeaders(headersToMap(response));
+        simpleHttpResponse.setAllHeaders(paresRespnseHeaders(response));
         simpleHttpResponse.setStatusLine(statusLine);
         simpleHttpResponse.setMessageBody(entityBody);
 
@@ -270,21 +292,8 @@ public class HttpClientUtils {
 
     }
 
-    private String execute(HttpRequestBase httpMethod) throws Exception {
 
-        SimpleHttpResponse simpleHttpResponse = executeInternal(httpMethod);
-
-        int statusCode = simpleHttpResponse.getStatusCode();
-
-        if (statusCode >= HttpStatus.SC_MULTIPLE_CHOICES) {
-            throw new Exception("Status code rejected:" + statusCode);
-        }
-
-        return simpleHttpResponse.getMessageBody();
-    }
-
-
-    private Map<String, List<String>> headersToMap(HttpResponse response) {
+    private Map<String, List<String>> paresRespnseHeaders(HttpResponse response) {
         Map<String, List<String>> respHeader = new HashMap<>();
         for (Header header : response.getAllHeaders()) {
             String headName = header.getName();
