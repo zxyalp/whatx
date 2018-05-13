@@ -1,25 +1,32 @@
 package com.tmsx.simu;
 
+import com.tmsx.noclient.base.SimpleHeaders;
 import com.tmsx.noclient.config.HttpCenterConfig;
+import com.tmsx.noclient.simu.MocoClient;
 import com.tmsx.noclient.simu.SimuClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import org.testng.annotations.Test;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.testng.annotations.Test;
 
 
 /**
  * Created by yang.zhou on 2017/11/23.
  */
 @ContextConfiguration(classes = HttpCenterConfig.class)
-public class SimuHttpTest extends AbstractTestNGSpringContextTests{
+public class MocoHttpTest extends AbstractTestNGSpringContextTests{
 
     @Autowired
-    private SimuClient simuClient;
+    MocoClient mocoClient;
 
     @Test
-    public void simuTest() throws Exception{
-       simuClient.login();
+    public void getAllPostsTest() throws Exception{
+        mocoClient.getAllPosts();
+    }
+
+    @Test
+    public void getFirstPostTest() throws Exception{
+        mocoClient.getFirstPost();
     }
 
 }

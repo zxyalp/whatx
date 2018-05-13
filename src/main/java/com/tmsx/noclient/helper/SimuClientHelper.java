@@ -12,23 +12,23 @@ import java.util.Map;
  * @author yang.zhou
  * @date 2017/10/31
  */
-@Component
 public class SimuClientHelper {
 
     private static final Logger logger = LoggerFactory.getLogger(SimuClientHelper.class);
 
-    public SimuClientHelper() {
+    public SimuClientHelper(){
 
     }
 
-    public static void loginTradeWeb() {
+    public static void loginTradeWeb(){
         Map<String, String> headerMap = new HashMap<>();
 
-
-        Map<String, String> requestMap = new HashMap<>();
+        Map<String, String>  requestMap = new HashMap<>();
 
 
     }
+
+
 
 
 }

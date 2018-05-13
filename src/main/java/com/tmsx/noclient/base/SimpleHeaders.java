@@ -7,11 +7,11 @@ import java.util.*;
 
 /**
  * 构建一个通用的Header
- *
  * @author yang.zhou
  * @date 2017/12/6
- */
-public class DefaultHeaders {
+ **/
+
+public class SimpleHeaders {
 
     private Map<String, String> headers;
 
@@ -19,7 +19,7 @@ public class DefaultHeaders {
         headers.put(name, value);
     }
 
-    public void setHeaders(Map<String, String> headersMap) {
+    public void setHeaders(Map<String, String> headersMap){
         this.headers = headersMap;
     }
 
@@ -27,7 +27,7 @@ public class DefaultHeaders {
         return headers;
     }
 
-    public void removeHeader(String name) {
+    public void removeHeader(String name){
         headers.remove(name);
     }
 
