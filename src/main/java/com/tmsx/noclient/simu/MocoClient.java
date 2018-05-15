@@ -1,10 +1,10 @@
 package com.tmsx.noclient.simu;
 
 import com.alibaba.fastjson.JSONObject;
-import com.tmsx.noclient.base.HttpClientUtils;
-import com.tmsx.noclient.base.SimpleHeaders;
-import com.tmsx.noclient.base.SimpleHttpRequest;
-import com.tmsx.noclient.base.SimpleHttpResponse;
+import com.tmsx.noclient.http.HttpClientUtils;
+import com.tmsx.noclient.http.SimpleHeaders;
+import com.tmsx.noclient.http.SimpleHttpRequest;
+import com.tmsx.noclient.http.SimpleHttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +27,7 @@ public class MocoClient {
     @Autowired
     private SimpleHeaders simpleHeaders;
 
-    public void getFirstPost() throws Exception{
+    public void addNewPost() throws Exception{
 
         SimpleHttpRequest request = HttpClientUtils.getInstance().getBasicRequest();
 

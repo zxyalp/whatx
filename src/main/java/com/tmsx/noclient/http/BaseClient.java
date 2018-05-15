@@ -1,4 +1,4 @@
-package com.tmsx.noclient.base;
+package com.tmsx.noclient.http;
 
 /**
  * httpclient使用流程

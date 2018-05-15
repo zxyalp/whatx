@@ -1,6 +1,6 @@
 package com.tmsx.noclient.config;
 
-import com.tmsx.noclient.base.SimpleHeaders;
+import com.tmsx.noclient.http.SimpleHeaders;
 import org.apache.http.client.protocol.HttpClientContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

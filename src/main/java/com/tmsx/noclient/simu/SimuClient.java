@@ -1,9 +1,9 @@
 package com.tmsx.noclient.simu;
 
-import com.tmsx.noclient.base.SimpleHeaders;
-import com.tmsx.noclient.base.HttpClientUtils;
-import com.tmsx.noclient.base.SimpleHttpRequest;
-import com.tmsx.noclient.base.SimpleHttpResponse;
+import com.tmsx.noclient.http.SimpleHeaders;
+import com.tmsx.noclient.http.HttpClientUtils;
+import com.tmsx.noclient.http.SimpleHttpRequest;
+import com.tmsx.noclient.http.SimpleHttpResponse;
 import com.tmsx.noclient.context.TestContextHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

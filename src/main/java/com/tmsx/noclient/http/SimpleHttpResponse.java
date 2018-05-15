@@ -1,4 +1,4 @@
-package com.tmsx.noclient.base;
+package com.tmsx.noclient.http;
 
 
 import org.apache.http.StatusLine;

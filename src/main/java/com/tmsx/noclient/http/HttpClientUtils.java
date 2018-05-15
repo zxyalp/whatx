@@ -1,9 +1,7 @@
-package com.tmsx.noclient.base;
+package com.tmsx.noclient.http;
 
 import com.alibaba.fastjson.JSONObject;
-import com.tmsx.noclient.context.HttpContext;
 import org.apache.http.*;
-import org.apache.http.client.config.CookieSpecs;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.*;
@@ -22,10 +20,8 @@ import org.springframework.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
@@ -87,16 +83,35 @@ public class HttpClientUtils {
     /**
      * Http Get请求
      */
-    public SimpleHttpResponse doGet(String url, String token) {
+    public SimpleHttpResponse doGet(String httpUrl, String token) {
         SimpleHttpRequest request = getBasicRequest(token);
-        request.setUrl(url);
+        request.setUrl(httpUrl);
         return doGet(request);
     }
 
 
-    public SimpleHttpResponse doGet(String url) {
+    /**
+     * Http Get 带参数
+     * @param httpUrl
+     * @return
+     */
+
+    public SimpleHttpResponse doGet(String httpUrl, Map<String, String> queryParams) {
         SimpleHttpRequest request = getBasicRequest();
-        request.setUrl(url);
+        request.setUrl(httpUrl);
+        request.setQuery(queryParams);
+        return doGet(request);
+    }
+
+
+    /**
+     * Http Get 只传url
+     * @param httpUrl
+     * @return
+     */
+    public SimpleHttpResponse doGet(String httpUrl){
+        SimpleHttpRequest request = getBasicRequest();
+        request.setUrl(httpUrl);
         return doGet(request);
     }
 

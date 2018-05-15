@@ -1,7 +1,4 @@
-package com.tmsx.noclient.base;
-
-import org.apache.http.Header;
-import org.apache.http.message.BasicHeader;
+package com.tmsx.noclient.http;
 
 import java.util.*;
 

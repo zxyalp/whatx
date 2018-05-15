@@ -28,7 +28,7 @@
         <!-- 获取httpClientContext的实例 -->
         <bean id="httpContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create"/>
 
-        <bean id="defaultHeaders" class="com.tmsx.noclient.base.SimpleHeaders">
+        <bean id="defaultHeaders" class="com.tmsx.noclient.http.SimpleHeaders">
             <property name="headers">
                 <map>
                     <entry key="accept" value="*/*" />
