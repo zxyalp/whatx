@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/BaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/BaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHeaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/MocoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/MocoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/MocoHttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/MocoHttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,14 +23,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="120" column="7" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+            <state relative-caret-position="2029">
+              <caret line="271" column="31" selection-start-line="271" selection-start-column="31" selection-end-line="271" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4913#4914#0" expanded="true" />
+                <element signature="e#4957#4958#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-423">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -42,26 +58,12 @@
       <file leaf-file-name="SimpleHttpResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimuClientHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TmsCounterHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/TmsCounterHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="128">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+              <folding>
+                <element signature="e#811#812#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,8 +71,8 @@
       <file leaf-file-name="SimuClientUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="301">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,11 +80,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimuClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java">
+      <file leaf-file-name="SimuClientHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="163">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="httpClient.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/httpClient.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimuClientConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,41 +122,11 @@
       <file leaf-file-name="SimuHttpTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="172">
+              <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MocoHttpTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/MocoHttpTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" selection-start-line="22" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MocoClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/MocoClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -161,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/app.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/webx/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/BaseTestCase.java" />
@@ -178,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpClientContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SMCenterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/RequestConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClient.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClient-base.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/ComponentScanConfig.java" />
@@ -190,9 +186,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/HttpCenterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuWebHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuLineHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/DefaultHeaders.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -200,17 +194,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/utils/PropertyUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/httpClientBeans.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimpleHeaders.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/MocoClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/MocoHttpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/WebClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/WebClientUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" />
       </list>
     </option>
@@ -268,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -329,6 +329,28 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tmsx" type="462c0819:PsiDirectoryNode" />
               <item name="noclient" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tmsx" type="462c0819:PsiDirectoryNode" />
+              <item name="noclient" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tmsx" type="462c0819:PsiDirectoryNode" />
+              <item name="noclient" type="462c0819:PsiDirectoryNode" />
               <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,6 +374,33 @@
               <item name="tmsx" type="462c0819:PsiDirectoryNode" />
               <item name="noclient" type="462c0819:PsiDirectoryNode" />
               <item name="simu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="tmsx" type="462c0819:PsiDirectoryNode" />
+              <item name="noclient" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="webx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
@@ -404,6 +453,13 @@
             </path>
             <path>
               <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="whatx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="whatx" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -421,7 +477,6 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -555,7 +610,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MocoHttpTest">
+  <component name="RunManager" selected="TestNG.SimuHttpTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -1064,8 +1119,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MocoHttpTest" />
         <item itemvalue="TestNG.SimuHttpTest" />
+        <item itemvalue="TestNG.MocoHttpTest" />
         <item itemvalue="TestNG.MocoHttpTest (1)" />
         <item itemvalue="TestNG.MocoHttpTest.mocoTest" />
         <item itemvalue="TestNG.&lt;default&gt;" />
@@ -1158,6 +1213,7 @@
       <workItem from="1526348735191" duration="78000" />
       <workItem from="1526349938683" duration="2997000" />
       <workItem from="1526379775695" duration="2388000" />
+      <workItem from="1526436585734" duration="13668000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1508810397014</created>
@@ -1317,39 +1373,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SimuHttpTest - 2018.05.11 at 18h 45m 26s.xml">
+    <history-entry file="SimuHttpTest - 2018.05.16 at 16h 45m 29s.xml">
       <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimuHttpTest - 2018.05.11 at 18h 45m 38s.xml">
+    <history-entry file="SimuHttpTest - 2018.05.16 at 16h 47m 10s.xml">
       <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MocoHttpTest_(1) - 2018.05.14 at 10h 38m 25s.xml">
-      <configuration name="MocoHttpTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MocoHttpTest_(1) - 2018.05.14 at 11h 01m 48s.xml">
-      <configuration name="MocoHttpTest (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SimuHttpTest - 2018.05.14 at 11h 24m 17s.xml">
+    <history-entry file="SimuHttpTest - 2018.05.16 at 16h 56m 28s.xml">
       <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimuHttpTest - 2018.05.14 at 11h 24m 53s.xml">
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 12m 59s.xml">
       <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SimuHttpTest - 2018.05.14 at 11h 25m 17s.xml">
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 14m 03s.xml">
       <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MocoHttpTest - 2018.05.14 at 11h 27m 45s.xml">
-      <configuration name="MocoHttpTest" configurationId="TestNG" />
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 17m 33s.xml">
+      <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MocoHttpTest - 2018.05.14 at 11h 31m 07s.xml">
-      <configuration name="MocoHttpTest" configurationId="TestNG" />
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 21m 20s.xml">
+      <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MocoHttpTest - 2018.05.14 at 11h 32m 05s.xml">
-      <configuration name="MocoHttpTest" configurationId="TestNG" />
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 22m 18s.xml">
+      <configuration name="SimuHttpTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 50m 11s.xml">
+      <configuration name="SimuHttpTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SimuHttpTest - 2018.05.16 at 17h 51m 07s.xml">
+      <configuration name="SimuHttpTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258963000" />
+    <option name="totallyTimeSpent" value="272631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1357,6 +1413,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3069307" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -1364,12 +1421,12 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38283828" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22607261" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32838285" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32838285" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24054463" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1382,7 +1439,6 @@
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.52640265" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.30769232" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Properties" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1405,7 +1461,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1418,34 +1474,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar!/org/apache/http/message/AbstractHttpMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/SpringScanMarker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/context/annotation/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="195" column="30" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/HttpContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1499,27 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="231" column="17" lean-forward="true" selection-start-line="231" selection-start-column="17" selection-end-line="231" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/httpClient.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1656,20 +1663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHeaders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1677,34 +1670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1727,18 +1696,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/MocoClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
+        <state relative-caret-position="774">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimuCilentUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/TmsCounterHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1746,40 +1709,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/base/SimuCilentUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="120" column="7" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+        <state relative-caret-position="359">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/context/TestContextHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpCenterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/HttpBeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="29" selection-start-line="29" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tmsx/simu/SimuHttpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/httpClient.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimpleHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="128">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding>
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/config/SimuClientConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/simu/SimuClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="301">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/BasicRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webx/CustomContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2029">
+          <caret line="271" column="31" selection-start-line="271" selection-start-column="31" selection-end-line="271" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4913#4914#0" expanded="true" />
+            <element signature="e#4957#4958#0" expanded="true" />
           </folding>
         </state>
       </provider>

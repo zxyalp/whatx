@@ -1,5 +1,8 @@
 package com.tmsx.noclient.http;
 
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -7,25 +10,23 @@ import org.slf4j.LoggerFactory;
  * @author yang.zhou
  * @date 2018/5/15
  */
-public class SimuClientUtils {
+public class SimuClientUtils extends HttpClientUtils{
 
     private static final Logger logger = LoggerFactory.getLogger(SimuClientUtils.class);
 
     private static SimuClientUtils simuClientUtils =null;
 
-    private SimuClientUtils(){}
-
-    public static SimuClientUtils getInstance(){
-        if (simuClientUtils == null){
-            synchronized (SimuClientUtils.class){
-                if (simuClientUtils ==null){
-                    simuClientUtils = new SimuClientUtils();
-                }
-            }
-        }
-        return simuClientUtils;
+    private SimuClientUtils(){
+        super();
     }
 
+    @Override
+    public SimpleHttpRequest getBasicRequest() {
 
+        HttpClientContext context = new HttpClientContext();
+        CookieStore cookieStore = new BasicCookieStore();
+        context.setCookieStore(cookieStore);
 
+        return super.getBasicRequest();
+    }
 }

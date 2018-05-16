@@ -12,4 +12,5 @@ public class TestContextHolder {
     public static final String CUST_ID = PropertyUtils.getProperty("simu.user");
     public static final String PASSWORD = PropertyUtils.getProperty("simu.password");
 
+
 }

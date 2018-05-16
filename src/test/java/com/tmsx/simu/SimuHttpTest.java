@@ -1,6 +1,7 @@
 package com.tmsx.simu;
 
 import com.tmsx.noclient.config.HttpCenterConfig;
+import com.tmsx.noclient.config.SimuClientConfig;
 import com.tmsx.noclient.simu.SimuClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -19,7 +20,9 @@ public class SimuHttpTest extends AbstractTestNGSpringContextTests{
 
     @Test
     public void simuTest() throws Exception{
-       simuClient.login();
+        System.out.println(SimuClientConfig.getAccessToken());
+        System.out.println(SimuClientConfig.getLoginResponse());
+
     }
 
 }

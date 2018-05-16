@@ -42,7 +42,7 @@ public class HttpClientUtils {
 
     private static HttpClientUtils httpClientUtils = null;
 
-    private HttpClientUtils() {
+    protected HttpClientUtils() {
     }
 
     public static HttpClientUtils getInstance() {
@@ -165,7 +165,9 @@ public class HttpClientUtils {
     public SimpleHttpRequest getBasicRequest(String aToken) {
 
         SimpleHttpRequest request = new SimpleHttpRequest();
-        request.addHeader("Cookie", aToken);
+        if (aToken != null){
+            request.addHeader("Cookie", aToken);
+        }
         return request;
     }
 
@@ -299,7 +301,7 @@ public class HttpClientUtils {
 
         EntityUtils.consume(entity);
 
-        simpleHttpResponse.setAllHeaders(paresRespnseHeaders(response));
+        simpleHttpResponse.setAllHeaders(paresResponseHeaders(response));
         simpleHttpResponse.setStatusLine(statusLine);
         simpleHttpResponse.setMessageBody(entityBody);
 
@@ -308,7 +310,7 @@ public class HttpClientUtils {
     }
 
 
-    private Map<String, List<String>> paresRespnseHeaders(HttpResponse response) {
+    private Map<String, List<String>> paresResponseHeaders(HttpResponse response) {
         Map<String, List<String>> respHeader = new HashMap<>();
         for (Header header : response.getAllHeaders()) {
             String headName = header.getName();
