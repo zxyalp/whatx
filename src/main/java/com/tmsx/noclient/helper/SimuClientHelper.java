@@ -29,6 +29,12 @@ public class SimuClientHelper {
     public static SimpleHttpResponse getLoginResponse(){
 
 
+
+
+        HttpClientContext context = new HttpClientContext();
+        CookieStore cookieStore = new BasicCookieStore();
+        context.setCookieStore(cookieStore);
+
         SimpleHttpRequest request = new SimpleHttpRequest();
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/x-www-form-urlencoded");

@@ -134,6 +134,7 @@ public class HttpClientUtils {
             HttpEntity entity = httpMethod.getEntity();
 
             entity.writeTo(new FileOutputStream(new File("post.json")));
+
             response = execute(httpMethod);
 
         } catch (Exception e) {
@@ -161,6 +162,9 @@ public class HttpClientUtils {
         return doPost(request);
     }
 
+    public SimpleHttpResponse doPost(SimpleHttpRequest request, HttpClientContext context) {
+        return doPost(request, context);
+    }
 
     public SimpleHttpRequest getBasicRequest(String aToken) {
 

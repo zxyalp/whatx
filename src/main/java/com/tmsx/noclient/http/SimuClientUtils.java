@@ -23,9 +23,7 @@ public class SimuClientUtils extends HttpClientUtils{
     @Override
     public SimpleHttpRequest getBasicRequest() {
 
-        HttpClientContext context = new HttpClientContext();
-        CookieStore cookieStore = new BasicCookieStore();
-        context.setCookieStore(cookieStore);
+
 
         return super.getBasicRequest();
     }
