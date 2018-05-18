@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="修改request">
+    <list default="true" id="843131c8-b0be-4c13-b534-cd9eaed397c8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/helper/SimuClientHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tmsx/noclient/http/SimuClientUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1210,7 +1207,7 @@
       <workItem from="1526379775695" duration="2388000" />
       <workItem from="1526436585734" duration="16295000" />
       <workItem from="1526521366546" duration="607000" />
-      <workItem from="1526554481351" duration="613000" />
+      <workItem from="1526554481351" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="add readme">
       <created>1508810397014</created>
@@ -1373,7 +1370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526466414478</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="修改request">
+      <created>1526556322942</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1526556322942</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1409,7 +1413,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276478000" />
+    <option name="totallyTimeSpent" value="277707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
